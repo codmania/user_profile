@@ -1,0 +1,153 @@
+
+.dimmable img {
+    width: 100%;
+}
+
+.ui.celled.table {
+    border: none;
+}
+
+.table.profile-action i {
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+
+.table.profile-action thead tr,
+.table.profile-action thead th {
+    background-color: #999 !important;
+}
+
+.table.profile-action th a {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.table.profile-action th i {
+    color: #fff;
+}
+
+.table.profile-action td a {
+    color: #333;
+}
+
+.table.profile-action td a:hover,
+.table.profile-action td a:focus {
+    color: #000;
+    font-weight: bold;
+}
+
+.visit-widget {
+    background: #95c552 !important;
+}
+
+.activity-widget {
+    background: #529ac5 !important;
+}
+
+.widget-icon i {
+    color: #fff;
+}
+
+.widget-title {
+
+}
+
+.widget-title span {
+    display: block;
+    color: #fff;
+}
+
+.widget-title span.visit {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.column .left {
+    float: left;
+    display: inline-block;
+}
+
+.column .right {
+    float: right;
+    display: inline-block;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.visit-column .ui.segment {
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    box-shadow: none;
+}
+
+.visit-column .floated.left .segment {
+    padding-left: 5px;
+}
+
+.visit-column .floated.right .segment {
+    padding-right: 5px;
+}
+
+.bottom.button {
+    background-color: #95c552 !important;
+}
+
+.card-main {
+    height: 100%;
+}
+
+.card-main .card-title {
+    max-height: 48px;
+    font-size: 1.2em !important;
+}
+
+.card-main .card-title .label {
+    text-align: left;
+}
+
+.card-main .card-title strong {
+    text-transform: capitalize;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.pt30 {
+    padding-top: 30px !important;
+}
+
+.user-profile {
+    text-align: center;
+}
+
+/*responsive style goes here*/
+
+@media screen and (max-width: 991px) {
+    .profile-body .ui.grid > .eight.wide.column {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile-container > .four.wide.column {
+        width: 100% !important;
+    }
+
+    .profile-container > .twelve.wide.column {
+        width: 100% !important;
+    }
+
+    .user-profile {
+        text-align: center;
+        margin: auto !important;
+    }
+
+    .card-main .card-title {
+        max-height: none;
+    }
+}

@@ -1,2 +1,201 @@
-<h3>Welcome</h3>
-<p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
+<div class="ui grid container profile-container pt30">
+
+    <div class="four wide column">
+        <div class="column mb20">
+            <div class="ui card user-profile">
+                <div class="ui blurring medium image">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <a href="https://en.gravatar.com/support/activating-your-account/" target="_blank">
+                                    <div class="ui inverted button">Change Image</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="visible content" src="assets/user_profile.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="column mb20">
+            <div class="ui fluid card">
+                <table class="ui celled table profile-action">
+                    <thead>
+                        <tr>
+                            <th>
+                                <i class="user icon"></i>
+                                <a href="">Erik Hoff</a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <i class="pencil icon"></i>
+                                <a class="">Edit Profile</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="key icon"></i>
+                                <a class="">Change Password</a>
+                            </td>
+                        </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="ui fluid card pwd-policy">
+                <div class="content card-title">
+                    <i class="key icon"></i>
+                    <strong>Password Policy</strong>
+                </div>
+                <div class="content">
+                    <p>To keep your information secure, Legal Robot periodically checks your password against public lists of hacked passwords (here's how). Since your account is fairly new, we have not run this check yet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="twelve wide column profile-body">
+        <div class="ui grid">
+            <div class="eight wide column">
+                <div class="ui fluid card visit-widget">
+                    <div class="content">
+                        <div class="column">
+                            <div class="ui horizontal statistic">
+                                <div class="value widget-icon">
+                                    <i class="calendar icon"></i>
+                                </div>
+                                <div class="label widget-title">
+                                    <span>OVERALL VISITS</span>
+                                    <span class="visit">52,147</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column visit-column">
+                            <div class="ui aligned grid">
+                                <div class="left floated left aligned six wide column">
+                                    <div class="ui segment">
+                                        <div>LAST WEEK</div>
+                                        <div>1,234</div>
+                                    </div>
+                                </div>
+                                <div class="right floated right aligned six wide column">
+                                    <div class="ui segment">
+                                        <div>LAST MONTH</div>
+                                        <div>1,234</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide column">
+                <div class="ui fluid card activity-widget">
+                    <div class="content">
+                        <div class="column">
+                            <div class="ui horizontal statistic">
+                                <div class="value widget-icon">
+                                    <i class="computer icon"></i>
+                                </div>
+                                <div class="label widget-title">
+                                    <span>OVERALL VISITS</span>
+                                    <span class="visit">52,147</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column visit-column">
+                            <div class="ui aligned grid">
+                                <div class="left floated left aligned six wide column">
+                                    <div class="ui segment">
+                                        <div>LAST WEEK</div>
+                                        <div>1,234</div>
+                                    </div>
+                                </div>
+                                <div class="right floated right aligned six wide column">
+                                    <div class="ui segment">
+                                        <div>LAST MONTH</div>
+                                        <div>1,234</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui grid">
+            <div class="eight wide column">
+                <div class="ui fluid card card-main">
+                    <div class="content card-title">
+                        <div class="ui mini horizontal statistic">
+                            <div class="value">
+                                <i class="key icon"></i>
+                            </div>
+                            <div class="label">
+                                <strong>Two Factor Authentication</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>To keep your information secure, Legal Robot periodically checks your password against public lists of hacked passwords (here's how). Since your account is fairly new, we have not run this check yet.</p>
+                    </div>
+                    <div class="ui bottom attached green button">
+                        <i class="add icon"></i> Secure my account with 2FA
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide column">
+                <div class="ui fluid card card-main">
+                    <div class="content card-title">
+                        <div class="ui mini horizontal statistic">
+                            <div class="value">
+                                <i class="key icon"></i>
+                            </div>
+                            <div class="label">
+                                <strong>Encryption Key & Recovery Codes</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>For your safety, Legal Robot uses end-to-end encryption for your sensitive data. By design, we never have your encryption keys. If you ever lose access to your account and need to reset your password, you must use a recovery code to decrypt your data. This is the only way to regain access to your data. You created encryption keys and recovery codes 8 times, the last time was May 6th, 2017 at 13:20:46</p>
+                    </div>
+                    <div class="ui bottom attached green button">
+                        <i class="add icon"></i> Recreate Encryption Key & Recovery Codes
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui grid">
+            <div class="eight wide column">
+                <div class="ui fluid card card-main">
+                    <div class="content card-title">
+                        <div class="ui mini horizontal statistic">
+                            <div class="value">
+                                <i class="key icon"></i>
+                            </div>
+                            <div class="label">
+                                <strong>API Key</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>Legal Robot plays well with others. Developers can use our API to build new applications that use Legal Robot's technology. Get started here.</p>
+                    </div>
+                    <div class="ui bottom attached green button">
+                        <i class="add icon"></i> Create API Key
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
