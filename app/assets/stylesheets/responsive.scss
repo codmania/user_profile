@@ -43,19 +43,20 @@
             }
         }
     }
+    header {
+        .show-on-mobile {
+            display: flex !important;
+        }
 
-    .show-on-mobile {
-        display: flex;
-    }
-
-    .hide-on-mobile {
-        display: none;
+        .hide-on-mobile {
+            display: none !important;
+        }
     }
 
 }
 
 .show-on-mobile {
-    display: none;
+    display: none !important;
 }
 
 .hide-on-mobile {
