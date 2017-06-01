@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'dotenv'
 gem 'puma'
+gem 'rails_12factor', group: :production
 group :development, :test do
   gem 'byebug'
 end
