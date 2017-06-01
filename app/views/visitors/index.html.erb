@@ -35,7 +35,9 @@
                             <tr>
                                 <td>User Rating</td>
                                 <td>
-                                    <div class="ui star rating" data-rating="3"></div>
+                                    <% (1..5).each do |i| %>
+                                        <i class="star icon"></i>
+                                    <% end %>
                                 </td>
                             </tr>
                             <tr>
