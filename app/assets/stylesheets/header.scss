@@ -1,0 +1,13 @@
+$primary: #6200ea;
+$secondary: #FF8300;
+$grey: #5D5D5D;
+
+header {
+    .ui.inverted.menu {
+        background-color: $primary;
+    }
+}
+
+.ui.inverted.menu.sidebar {
+    background-color: $primary;
+}

@@ -7,6 +7,11 @@ main {
     background-color: #eee;
 }
 
+.page-wrapper {
+    padding-top: 70px !important;
+    background-color: #eee;
+}
+
 .dimmable {
     img {
         width: 100%;
@@ -59,15 +64,89 @@ main {
         .profile-menu {
             background-color: $primary !important;
             border-radius: 0 !important;
+            box-shadow: none;
 
             a {
                 color: #fff !important;
             }
 
+            .item:hover {
+                background: rgba(255, 255, 255, 0.08);
+            }
+            .item.active {
+                background: rgba(255, 255, 255, 0.2);
+
+                &:after {
+                    color: transparent;
+                    content: "";
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    border-bottom: 7px solid #fff;
+                    border-left: 7px solid transparent;
+                    border-right: 7px solid transparent;
+                    width: 0;
+                }
+            }
+
             .item:before {
                 background: rgba(90, 90, 90, 0.5);
             }
+
         }
+    }
+}
+
+.ui.card {
+    .ui.list {
+        i {
+            color: $grey;
+        }
+
+        .content {
+            .header {
+                color: $grey !important;
+            }
+            .meta {
+                font-style: italic;
+                font-size: 0.8em;
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.twelve.column {
+    .statistic {
+        margin-top: 10px !important;
+
+        .value {
+            color: $secondary !important;
+
+            i {
+                margin-right: 5px !important;
+            }
+        }
+    }
+
+    .ui.list {
+        margin-top: 40px;
+    }
+}
+
+.act-column {
+    .content {
+        .meta {
+            margin: 0px !important;
+        }
+    }
+
+    .ui.button {
+        border-radius: 0 !important;
+        background-color: #eee !important;
     }
 }
 
@@ -77,6 +156,15 @@ main {
     margin-bottom: 20px;
 }
 
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
 .pt30 {
     padding-top: 30px !important;
 }
+

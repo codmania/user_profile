@@ -1,0 +1,63 @@
+/*responsive style goes here*/
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        .profile-container {
+            .four.wide.column {
+                width: 100% !important;
+            }
+            .twelve.wide.column {
+                width: 100% !important;
+            }
+
+            .profile-card {
+                margin: auto;
+            }
+
+            .ui.fluid.card {
+                max-width: 500px;
+                margin: auto;
+            }
+
+            .profile-card {
+                .ui.blurring.image {
+                    width: 100%;
+                }
+            }
+        }
+
+        .ui.table:not(.unstackable) tr > td {
+            display: table-cell !important;
+        }
+
+        .dash-column {
+            .ten.wide.column {
+                width: 100% !important;
+            }
+            .six.wide.column {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .show-on-mobile {
+        display: flex;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+}
+
+.show-on-mobile {
+    display: none;
+}
+
+.hide-on-mobile {
+    display: flex;
+}
